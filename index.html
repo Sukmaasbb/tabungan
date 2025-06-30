@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<title>Catatan Tabungan</title>
+<style>
+body {
+font-family: 'Segoe UI', sans-serif;
+background-color: #f0f8ff;
+padding: 20px;
+max-width: 600px;
+margin: auto;
+}
+h2 {
+color: #2e8b57;
+}
+input, button {
+padding: 10px;
+margin: 5px 0;
+width: 100%;
+}
+.entry {
+border-bottom: 1px solid #ccc;
+padding: 5px 0;
+}
+.saldo {
+font-weight: bold;
+font-size: 1.2em;
+margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<h2>📘 Catatan Tabungan</h2>
+
+<label>Jenis Transaksi:</label>
+<select id="type">
+<option value="masuk">Pemasukan</option>
+<option value="keluar">Pengeluaran</option>
+</select>
+
+<label>Jumlah (Rp):</label>
+<input type="number" id="amount" placeholder="Contoh: 50000" />
+
+<label>Deskripsi:</label>
+<input type="text" id="desc" placeholder="Contoh: Uang jajan, gaji, dll" />
+
+<button onclick="ta
